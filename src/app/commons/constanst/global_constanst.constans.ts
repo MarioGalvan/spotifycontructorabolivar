@@ -12,6 +12,7 @@ export const GLOBAL_CONSTANTS = {
     APP_CONTACT_ZIPCODE:'110221',
     APP_CONTACT_WEBSITE:'https://constructorabolivar.co',
     APP_CONTACT_EMAIL: 'info@contructorabolivar.co',
+    APP_SIGN_OUT:'Cerrar Sesion',
 
     SPOTIFY_CREDENTIALS: {
         CLIENT_ID: '8e6af06a810a44c697005541c5665e8b',
