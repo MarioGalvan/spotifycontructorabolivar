@@ -11,11 +11,16 @@
 * Spotify (api)
 * Docker
 
+## Scripts Disponibles
+
+ * yarn install
+ * yarn run dev
 
 ## Dockerizacion
 
 el repositorio cuenta con un archivo Dockerfile para que se pueda crear imagen y subir container
 de igual forma cuenta con docker-comspose.yml (recomendado extension de visual studio code - extension docker)
+
 
 docker-compose up --build -d
 
