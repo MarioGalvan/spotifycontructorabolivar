@@ -5,6 +5,8 @@ import { SpotifyHandleLogin } from "@/app/api/spotify";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/app/store";
 import { logout } from "@/app/store/app_store";
+import Image from "next/image";
+import Link from "next/link";
 
 export const NavBar = () => {
   const logged = useSelector((state: RootState) => state.AppReducer.logged);
@@ -17,21 +19,21 @@ export const NavBar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <a href="/">
-        <img
+      <Link href="/">
+        <Image
           src={GLOBAL_CONSTANTS.APP_LOGO}
           alt="logo"
         />
-      </a>
+      </Link>
       {/* <a className={styles.navhome}>{GLOBAL_CONSTANTS.APP_NAME}</a> */}
       <ul className={styles.navbarNav}>
-        <a href="/" className={styles.navBarItemMenu}>
+        <Link href="/" className={styles.navBarItemMenu}>
           {GLOBAL_CONSTANTS.APP_HOME}
-        </a>
+        </Link>
 
-        <a href="/search" className={styles.navBarItemMenu}>
+        <Link href="/search" className={styles.navBarItemMenu}>
           {GLOBAL_CONSTANTS.APP_SEARCH}
-        </a>
+        </Link>
       </ul>
 
       <ul className={styles.navbarNav}>
