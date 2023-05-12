@@ -4,9 +4,11 @@ import { useDispatch } from "react-redux";
 import { setLogged } from "./store/app_store";
 import { Card } from "./Core/Card/Card";
 import styles from "./styles/home.module.scss";
+import { Loader_APP } from "./Core/Loader/Loader";
 
 export const App = () => {
   const [dataGeneral, setdataGeneral] = useState([]);
+  const [loading, setloading] = useState(true);
   const dispatch = useDispatch();
   const handleLogin = () => {
     dispatch(setLogged(true));
@@ -47,6 +49,20 @@ export const App = () => {
       .catch((error) => {
         console.log(error);
       });
+    setloading(false)
   }, []);
+
+  if (loading) {
+    return (
+      <div
+        style={{
+          margin: "80px",
+        }}
+      >
+        <Loader_APP />
+      </div>
+    );
+  }
+
   return <div className={styles.homeContainer}>{__renderCards()}</div>;
 };

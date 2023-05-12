@@ -7,12 +7,29 @@
 .containerResult {
   display: flex;
   justify-content: center;
-  p{
+  p {
     font-size: 1.4rem;
     color: dimgray;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 }
+
+.SearchContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .SearchContainer {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
 .search {
   width: 80%;
   padding: 10px 10px 10px 10px;
