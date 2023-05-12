@@ -1,0 +1,29 @@
+@import "index";
+
+.containerSearch {
+  display: flex;
+  justify-content: center;
+}
+.containerResult {
+  display: flex;
+  justify-content: center;
+  p{
+    font-size: 1.4rem;
+    color: dimgray;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+.search {
+  width: 80%;
+  padding: 10px 10px 10px 10px;
+  margin: 20px;
+  border-radius: 9999px;
+  border: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.19);
+  font-size: 1.1rem;
+  color: #a1a1a1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  &:focus {
+    outline: none;
+  }
+}

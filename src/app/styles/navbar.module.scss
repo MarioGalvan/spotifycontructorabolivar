@@ -1,4 +1,4 @@
-@import 'index';
+@import "index";
 
 .navbar {
   display: flex;
@@ -38,23 +38,26 @@
   color: #333;
 }
 
-.navhome{
+.navhome {
+  font-size: 1.3rem;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   &:hover {
     color: #333;
   }
 }
 
-.navbarNav{
+.navbarNav {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navSigIn{
+.navSigIn {
   text-decoration: none;
   font-weight: 700;
   background-color: #fff;
@@ -64,3 +67,44 @@
   border: 0px solid #333;
   cursor: pointer;
 }
+
+.navBarItemSearch {
+  text-decoration: none;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 9999px;
+  padding: 12px 25px;
+  color: $primary-color;
+  border: 0px solid #333;
+  cursor: pointer;
+}
+
+.navBarItemMenu {
+  text-decoration: none;
+  background-color: $primary-color;
+  padding: 12px 25px;
+  color: #fff;
+  border: 0px solid #333;
+  cursor: pointer;
+  font-size: 1.2rem;
+  &:hover{
+    color: $secondary-color;
+    transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .navhome{
+    font-size: 0.8rem;
+  }
+  .navBarItemSearch{
+    font-size: 0.8rem;
+    background-color: $primary-color;
+    padding: 1px 5px 1px 1px;
+    color: #fff;
+  }
+  .navBarItemMenu{
+    display: none;
+  }
+}
+  

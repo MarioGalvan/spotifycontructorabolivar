@@ -28,7 +28,7 @@ export const GetBearerToken = async () => {
 };
 
 export const APP_HTTP_SPOTIFY = async (props: AppHttpProps) => {
-  const { url, method, body, headers, params } = props;
+  const { url, method, body } = props;
   const baseUrl = "https://api.spotify.com/v1/" + url;
   console.log(baseUrl);
   const dataBearer = await GetBearerToken();

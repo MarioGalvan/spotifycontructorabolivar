@@ -7,7 +7,7 @@ interface AppState {
 
 const initialState: AppState = {
     logged: false,
-    access_token: localStorage.getItem("access_token") || ""
+    access_token: typeof window !== "undefined" && sessionStorage.getItem("access_token") || ""
 };
 
 const appSlice = createSlice({

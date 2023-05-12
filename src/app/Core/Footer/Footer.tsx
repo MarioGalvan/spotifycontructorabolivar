@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className={styles.footer}>
         <div className="footer__logo">
           <img
-            src="https://www.constructorabolivar.com/sites/all/themes/constructora/assets/icons/logo-bolivar_scroll.svg"
+            src={GLOBAL_CONSTANTS.APP_LOGO}
             alt="logo"
           />
         </div>
