@@ -27,7 +27,7 @@ export const GLOBAL_CONSTANTS = {
     CLIENT_SECRET: "0826dba7a0244581aa97d6b1b9f28adc",
     ARTIST_LIST:
       "2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6",
-    URL_REDIRECT: "http://localhost:3000",
+    URL_REDIRECT: "http://localhost:3000/",
   },
 
   SEARCH: {
