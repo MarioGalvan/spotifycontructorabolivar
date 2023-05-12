@@ -23,4 +23,5 @@ docker-compose up --build -d
 
 <img src="./img_project/busqueda.png" />
 <img src="./img_project/Captura de pantalla 2023-05-11 223556.png" />
+<img src="./img_project/Captura de pantalla 2023-05-11 223535.png" />
 
