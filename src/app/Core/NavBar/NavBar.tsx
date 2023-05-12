@@ -23,6 +23,8 @@ export const NavBar = () => {
         <Image
           src={GLOBAL_CONSTANTS.APP_LOGO}
           alt="logo"
+          width={100}
+          height={100}
         />
       </Link>
       {/* <a className={styles.navhome}>{GLOBAL_CONSTANTS.APP_NAME}</a> */}

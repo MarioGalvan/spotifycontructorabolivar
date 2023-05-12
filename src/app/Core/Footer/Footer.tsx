@@ -9,7 +9,12 @@ export const Footer = () => {
     <footer>
       <div className={styles.footer}>
         <div className="footer__logo">
-          <Image src={GLOBAL_CONSTANTS.APP_LOGO_FOOTER} alt="logo" width={50} />
+          <Image
+            src={GLOBAL_CONSTANTS.APP_LOGO_FOOTER}
+            alt="logo"
+            width={50}
+            height={30}
+          />
         </div>
 
         <div className="footer__contact">

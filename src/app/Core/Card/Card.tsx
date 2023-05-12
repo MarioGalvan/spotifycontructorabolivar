@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../../styles/card.module.scss";
-import Image from "next/image";
 
 type CardProps = {
   title: string;
@@ -12,7 +11,7 @@ export const Card = ({ title, description, image }: CardProps) => {
   return (
     <div className={styles.card}>
       <div className={styles.card_image}>
-        <Image src={image} alt={title} />
+        <img src={image} alt={title} width={50}  height={50} />
       </div>
       <h2 className={styles.card_title}>{title}</h2>
       <p className={styles.card_description}>{description}</p>
