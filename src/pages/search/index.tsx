@@ -3,8 +3,8 @@ import "../../app/globals.css";
 import { LayoutApp } from "@/app/layout/LayoutApp";
 import { store } from "@/app/store";
 import { Provider } from "react-redux";
-import { Search_Tracks_Artist } from "./search";
 import React from "react";
+import Search_Tracks_Artist from "./search";
 
 export default function SearchPage() {
   return (

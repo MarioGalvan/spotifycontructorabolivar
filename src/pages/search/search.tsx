@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from "react";
 import styles from "../../app/styles/search.module.scss";
 import { GLOBAL_CONSTANTS } from "@/app/commons/constanst/global_constanst.constans";
@@ -8,7 +9,7 @@ import { APP_HTTP_SPOTIFY } from "@/app/api/interceptor-http";
 import { Card } from "@/app/Core/Card/Card";
 import { Loader_APP } from "@/app/Core/Loader/Loader";
 
-export const Search_Tracks_Artist = () => {
+export default function Search_Tracks_Artist() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setloading] = useState(false);
@@ -18,7 +19,6 @@ export const Search_Tracks_Artist = () => {
   const handleLogin = () => {
     dispatch(setLogged(true));
   };
-  const logged = useSelector((state: RootState) => state.AppReducer.logged);
 
   React.useEffect(() => {
     if (sessionStorage.getItem("access_token")) {
@@ -66,7 +66,8 @@ export const Search_Tracks_Artist = () => {
 
   const __renderResults = () => {
     return (
-      searchResults.length > 0 && !searching &&
+      searchResults.length > 0 &&
+      !searching &&
       searchResults.map((item: any, index) => (
         <Card
           key={index}
@@ -81,6 +82,9 @@ export const Search_Tracks_Artist = () => {
     loading,
     searching,
   });
+
+  const logged = useSelector((state: RootState) => state.AppReducer.logged);
+
   return (
     <>
       <div className={styles.containerSearch}>
@@ -113,4 +117,4 @@ export const Search_Tracks_Artist = () => {
       <div className={styles.SearchContainer}>{__renderResults()}</div>
     </>
   );
-};
+}
