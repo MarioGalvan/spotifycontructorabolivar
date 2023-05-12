@@ -21,6 +21,6 @@ docker-compose up --build -d
 
 ## Imagenes relacionadas al proyecto
 
-<img src="https://github.com/MarioGalvan/spotifycontructorabolivar/blob/main/img_project/Captura%20de%20pantalla%202023-05-11%20223535.png" />
+<img src="./img_project/busqueda.png" />
 <img src="https://github.com/MarioGalvan/spotifycontructorabolivar/blob/main/img_project/Captura%20de%20pantalla%202023-05-11%20223536.png" />
 
